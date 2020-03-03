@@ -1,0 +1,21 @@
+/* --------------------------------
+File#: _bg-fixed
+Title: Fixed Background
+Descr: Background Attachment Fixed
+-------------------------------- */
+:root, [data-theme="default"] {
+	.bg-image {
+		box-shadow: inset 0 0 0 2000px rgba(251, 251, 251, 0.88);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+// Dark Theme Background
+[data-theme="dark"] {
+ 	.bg-image {
+		box-shadow: inset 0 0 0 2000px rgba(29, 27, 27, 0.91);
+	}
+}

@@ -1,0 +1,64 @@
+/* --------------------------------
+File#: _ckeditor
+Title: ckeditor
+Descr: Component Ckeditor
+-------------------------------- */
+
+// For mobile
+.align_left, .align_right, .align_center {
+	/* display images in center rather than aligned */
+	display: block;
+	float: none;
+	margin: var(--space-xxs) auto;
+	max-width: 100%;
+}
+
+figure,
+figure figcaption {
+	/* let figcaption display as wide as needed below image */
+	display: block;
+	text-align: center;
+}
+
+// For desktop https://codyhouse.co/ds/docs/framework/breakpoints
+@include breakpoint(md) {
+
+	.align_left {
+		/* for images placed in rich text editor */
+		float: left;
+		padding: var(--space-xxs);
+		position: relative;
+		max-width: 50%;
+	}
+
+	.align_right {
+		/* for images placed in rich text editor */
+		float: right;
+		padding: var(--space-xxs);
+		max-width: 50%;
+	}
+
+	.align_center {
+		/* for images placed in rich text editor */
+		display: block;
+		margin: auto;
+		padding: var(--space-xxs);
+		position: relative;
+	}
+
+	figure {
+		/* figure for image that has a caption */
+		display: table;
+		margin: var(--space-xxs) 0;
+	}
+
+	figure figcaption {
+		/* display caption text below image contained to image width */
+		display: table-caption;
+		caption-side: bottom;
+		font-size: var(--text-md);
+		line-height: var(--space-sm);
+		margin-top: var(--space-sm);
+	}
+
+}

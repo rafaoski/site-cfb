@@ -1,0 +1,36 @@
+
+/* --------------------------------
+File#: _highlight-code
+Title: Code highlight snippet
+Descr: Code for ProcessWire debug regions
+-------------------------------- */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace;
+	font-size: 0.9em;
+	padding: 0.4rem 0.6rem;
+}
+
+code,
+kbd,
+samp {
+	background: var(--color-white);
+	border-radius: 0.2rem;
+}
+
+pre {
+	border: 0.1rem solid var(--color-accent-dark);
+	line-height: 1.5;
+	margin: 4rem 0;
+	overflow: auto;
+	padding: 3rem 2rem;
+	text-align: left;
+}
+
+pre code {
+	background: transparent;
+	padding: 0;
+}

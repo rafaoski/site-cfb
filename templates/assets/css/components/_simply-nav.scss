@@ -1,0 +1,25 @@
+/* --------------------------------
+File#: _simply-nav
+Title: Simply Navigation
+Descr: Lightweight simple navigation built with flexbox and vanilla JavaScript
+Link: https://obscuredetour.github.io/simply-nav/
+-------------------------------- */
+
+// nav breakpoint variable
+$breakpoint: 64rem;
+$nav-height: 4.5rem;
+
+// Background colors & shades of grays
+$jet: var(--color-contrast-lower);
+$raven: hsl(0, 0%, 23%);
+$pearl: var(--color-contrast-higher);
+$gray: hsl(0, 0%, 69%);
+
+$lucky: var(--color-contrast-lower);
+
+// text color
+$text-color: $pearl;
+$link-color: $lucky;
+
+@import 'simply-nav/_nav-wrapper';
+@import 'simply-nav/_burger-squeeze';

@@ -1,0 +1,74 @@
+/* --------------------------------
+File#: _card
+Title: Basic Card
+Descr: Animated Card | Design in Code inspired from tutorial ( https://www.youtube.com/watch?v=oewQd6IPajM&t=578s )
+-------------------------------- */
+
+.card {
+	// background-color: var(--color-bg);
+	transition: box-shadow .3s;
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	position: relative;
+	&:hover {
+		box-shadow: var(--shadow-md);
+
+		.card__title {
+		background-size: 100% 100%;
+		}
+
+		.card__icon-wrapper .icon {
+			animation: card-icon-animation .3s;
+		}
+
+		.card__link {
+			opacity: 0.6;
+		}
+
+	}
+}
+
+.card__link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	transition: opacity .3s ease;
+}
+
+.card__title {
+	background-image: linear-gradient(transparent 60%, alpha(var(--color-primary), 0.4) 50%);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 0% 100%;
+	transition: background .3s;
+}
+
+.card__icon-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 3em;
+	height: 3em;
+	background-color: alpha(var(--color-contrast-high), 0.85);
+	border-bottom-left-radius: var(--radius-lg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes card-icon-animation {
+	0%, 100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+
+	50% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	51% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+}
