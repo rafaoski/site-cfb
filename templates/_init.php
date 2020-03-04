@@ -50,7 +50,6 @@ setting([
 	'saveMessages' => $options->more_options->get("name=save-messages"),
 // Images
 	'img' => page()->images && page()->images->count() ? page()->images : '',
-	'spinner' => urls('templates') . 'assets/img/spinner.svg',
 // Main
 	'mainTitle' => page('title'),
 	'mainImage' => true, // Set basic background image for all pages
