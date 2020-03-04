@@ -21,7 +21,7 @@ $i = 0;
 
 <div class='container max-width-lg'>
 
-	<h3 class='text-uppercase text-bold'>
+	<h3 class='text-xl text-uppercase text-bold'>
 		<span class='text-xxxl@md'>&bull;</span>
 		<a class='link text-xxl@md' href='<?= $item->url ?>'>
 			<?= $item->title ?>

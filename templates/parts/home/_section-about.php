@@ -9,7 +9,7 @@
 
 <div class='container max-width-lg padding-y-md'>
 
-	<h3 class='text-uppercase text-bold'>
+	<h3 class='text-xl text-uppercase text-bold'>
 		<a class='link text-xxl@md' href='<?= $item->url ?>'>
 			<?= $item->title ?>
 		</a>
