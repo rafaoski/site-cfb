@@ -14,12 +14,13 @@ $jet: var(--color-contrast-lower);
 $raven: hsl(0, 0%, 23%);
 $pearl: var(--color-contrast-higher);
 $gray: hsl(0, 0%, 69%);
-
 $lucky: var(--color-contrast-lower);
+$choco: var(--color-contrast-high);
 
 // text color
 $text-color: $pearl;
 $link-color: $lucky;
+$link-bg: $choco;
 
 @import 'simply-nav/_nav-wrapper';
 @import 'simply-nav/_burger-squeeze';

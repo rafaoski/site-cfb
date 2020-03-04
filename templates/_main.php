@@ -15,7 +15,7 @@
 
 <!-- HEADER -->
 <header id='header' class='nav-wrapper position-fixed'>
-	<nav class="nav padding-y-md">
+	<nav class="nav">
 		<?php files()->include('parts/_simply-nav') ?>
 	</nav>
 </header>

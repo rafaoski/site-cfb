@@ -18,21 +18,21 @@ $siteName = setting('siteName');
 </button>
 
 <!-- LOGO -->
-<a class='logo-link' href="<?= $home->url ?>">
+<a class='logo-link link' href="<?= $home->url ?>">
 	<?php
-		if($logo) echo "<span class='logo'><img src='$logo->url' alt='$siteName'></span>";
+		if($logo) echo "<img width='110' src='$logo->url' alt='$siteName'>";
 		else echo "<span class='site-name text-bold text-lg font-secondary'>$siteName</span>";
 	?>
 </a>
 
 <!-- NAVIGATION -->
 <div class="nav-list" role="navigation">
-	<ul class="list -left font-secondary flex@md" style='overflow: auto; overflow-y:hidden; white-space: nowrap;'>
+	<ul class="list -left font-secondary flex@md" style='overflow-x: auto; white-space: nowrap;'>
 		<?= simplyNav($home->and($home->children)) ?>
 	<!-- BLOG RSS -->
 		<li class='item'>
 			<a class='link rss' href="<?= setting('blog')->url ?>rss/">
-				<i data-feather='rss' stroke-width='1'></i>
+				<i class='inline-block' data-feather='rss' stroke-width='1'></i>
 				<?= setting('rss') ?>
 			</a>
 		</li>
@@ -48,7 +48,7 @@ $siteName = setting('siteName');
 ?>
 
 <!-- DARK / LIGHT MODE SWITCHER -->
-<div class="mode flex flex-center">
+<div class="mode flex flex-center margin-left-md@md">
 	<label aria-hidden="true" class="mode__label" for="themeSwitch" style='width: 35px'>
 		<i id='moon' data-feather='moon' stroke-width='1' width='35' height='35'></i>
 		<i id='sun' data-feather='sun' stroke-width='1' width='35' height='35'></i>
