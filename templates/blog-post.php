@@ -22,7 +22,7 @@ $blogParts = setting('blogParts');
 		]);
 	?>
 
-	<?= pageLinks(page()->links()) // https://processwire.com/blog/posts/processwire-3.0.107-core-updates/ ?>
+	<?= pageLinks(page()->links("id!=1")) // https://processwire.com/blog/posts/processwire-3.0.107-core-updates/ ?>
 
 	<?php
 		// Comments
