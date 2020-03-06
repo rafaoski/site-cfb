@@ -17,12 +17,12 @@ samp {
 code,
 kbd,
 samp {
-	background: var(--color-white);
+	background: var(--color-bg);
 	border-radius: 0.2rem;
 }
 
 pre {
-	border: 0.1rem solid var(--color-accent-dark);
+	border: 0.1rem solid var(--color-contrast-low);
 	line-height: 1.5;
 	margin: 4rem 0;
 	overflow: auto;
